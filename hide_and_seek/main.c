@@ -253,7 +253,7 @@ int main(void) {
     printf("[*] Hide Success! flag_vnode = 0x%llx\n", flag_vnode);
     printf("[*] %s access ret: %d\n", filename, access(filename, F_OK));
 
-    system("/bin/sh");
+    // system("/bin/sh");
 
     uint64_t reveal_ret = reveal_file(flag_vnode);
     printf("[*] reveal_ret = 0x%llx\n", reveal_ret);
